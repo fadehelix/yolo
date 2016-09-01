@@ -1,8 +1,9 @@
+//Mixins
 @import "bourbon";
+//Grid
 @import "neat";
 
-@import 'base/variables';
-@import 'base/mixins';
+//Bourbon Bitters
 @import 'base/base';
 
 @import 'layout/layout';
