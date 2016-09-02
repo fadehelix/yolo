@@ -1,3 +1,6 @@
+/*-------
+@group Normalize
+--------*/
 html {
   box-sizing: border-box;
 }
@@ -11,4 +14,11 @@ html {
 html,
 body {
   height: 100%;
+}
+
+/*----------
+@group Style Guide - custom styles
+-----------*/
+.example {
+	border: 1px solid #37f;
 }

@@ -50,12 +50,10 @@ gulp.task('styleguide:generate', function() {
 });
 
 gulp.task('styleguide:applystyles', function() {
-  return gulp.src('main.scss')
-  .pipe(sass({
-      errLogToConsole: true
-  }))
+  return gulp.src('./scss/style.scss')
+  .pipe(sass(sassOptions).on('error', sass.logError))
   .pipe(styleGuide.applyStyles())
-  pipe(gulp.dest(styleGuideOutputPath));
+  .pipe(gulp.dest(styleGuideOutputPath));
 });
 
 // Process JS files and return the stream.
