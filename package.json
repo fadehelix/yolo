@@ -1,20 +1,20 @@
 {
-  "name": "kappa",
+  "name": "Yolo Boilerplate",
   "author": "Fadehelix",
   "version": "1.0.0",
-  "description": "Custom theme",
+  "description": "Drupal 8 Theme Boilerplate",
   "devDependencies": {
     "drupal-sass-breakpoints": "^1.0.1",
     "gulp": "^3.8.11",
     "gulp-autoprefixer": "^3.1.0",
     "gulp-concat": "^2.6.0",
-    "gulp-postcss": "^5.1.10",
+    "gulp-postcss": "^6.1.1",
     "gulp-sass": "^2.3.2",
-    "gulp-shell": "0.2.10",
+    "gulp-shell": "0.5.2",
     "gulp-sourcemaps": "^1.5.2",
     "merge-stream": "^1.0.0",
     "node-bourbon": "^4.2.8",
     "node-neat": "^1.7.2",
-    "sc5-styleguide": "^1.1.2"
+    "sc5-styleguide": "^1.1.3"
   }
 }
