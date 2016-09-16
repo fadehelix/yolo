@@ -1,22 +1,19 @@
-/*
-Base button style.
-
-
-button, .button - test
-:hover  - When mouse cursor is over the button.
-
-markup: <button class='button {$modifiers}'>Test</button> 
-
-Styleguide 1.3
-*/
+//Base button style.
+//
+//button, .button - test
+//:hover  - When mouse cursor is over the button.
+//
+//markup: <button class='button {$modifiers}'>Test</button>
+//
+//Styleguide 1.3
+//
 
 #{$all-buttons} {
   appearance: none;
-  /*background-color: $action-color;*/
-  background-color: #f00;
+  background-color: $action-color;
   border: 0;
   border-radius: $base-border-radius;
-  color: #fff;
+  color: $color-white;
   cursor: pointer;
   display: inline-block;
   font-family: $base-font-family;
@@ -35,12 +32,12 @@ Styleguide 1.3
   &:hover,
   &:focus {
     background-color: shade($action-color, 20%);
-    color: #fA0;
+    color: $color-yellow;
   }
 
   &:disabled {
     cursor: not-allowed;
-    opacity: 0.5;
+    opacity: .5;
 
     &:hover {
       background-color: $action-color;
