@@ -1,5 +1,5 @@
 {
-  "name": "Yolo Boilerplate",
+  "name": "yolo-boilerplate",
   "author": "Fadehelix",
   "version": "1.0.0",
   "description": "Drupal 8 Theme Boilerplate",
@@ -12,6 +12,7 @@
     "gulp-sass": "^2.3.2",
     "gulp-shell": "0.5.2",
     "gulp-sourcemaps": "^1.5.2",
+    "gulp-task-loader": "^1.4.4",
     "merge-stream": "^1.0.0",
     "node-bourbon": "^4.2.8",
     "node-neat": "^1.7.2",
