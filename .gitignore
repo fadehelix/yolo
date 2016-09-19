@@ -1,7 +1,7 @@
-css/
-node_modules/
-maps/
-styleguide/
+/css/
+/node_modules/
+/maps/
+/styleguide
 
 #Drupal theme  files
 templates/
