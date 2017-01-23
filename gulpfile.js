@@ -5,15 +5,13 @@
 
 var gulp = require("gulp");
 var sass = require("gulp-sass");
-var styleGuide = require('sc5-styleguide');
-var styleGuideOutputPath = 'styleguide';
 //Additional configuration and import node libraries
 var sassOptions = {
     errLogToConsole: true,
     outputStyle: 'expanded',
     includePaths: require('node-bourbon').includePaths,
     includePaths: require('node-neat').includePaths
-}
+};
 // Show in browser inspector in which SCSS file and line rule is defined.
 var sourcemaps = require('gulp-sourcemaps');
 var shell = require('gulp-shell');
@@ -37,25 +35,6 @@ gulp.task('sass', function() {
     .pipe(gulp.dest('./css'));
 });
 
-//Style Guide generator
-gulp.task('styleguide:generate', function() {
-    return gulp.src('./scss/**/*.scss')
-    .pipe(styleGuide.generate({
-        title: 'YOLO Style Guide',
-        server: true,
-        rootPath: styleGuideOutputPath,
-        overviewPath: 'README.md'
-    }))
-    .pipe(gulp.dest(styleGuideOutputPath));
-});
-
-gulp.task('styleguide:applystyles', function() {
-  return gulp.src('./scss/style.scss')
-  .pipe(sass(sassOptions).on('error', sass.logError))
-  .pipe(styleGuide.applyStyles())
-  .pipe(gulp.dest(styleGuideOutputPath));
-});
-
 // Process JS files and return the stream.
 gulp.task('js', function() {
   return gulp.src('js/*js')
@@ -63,9 +42,7 @@ gulp.task('js', function() {
 });
 
 // Default task to be run with `gulp`.
-gulp.task('default', ['sass', 'styleGuide', 'js'], function() {
-  gulp.watch("scss/**/*.scss", ['sass', 'styleGuide']);
+gulp.task('default', ['sass', 'js'], function() {
+  gulp.watch("scss/**/*.scss", ['sass']);
   gulp.watch("js/*.js", ['js']);
 });
-
-gulp.task('styleGuide', ['styleguide:generate', 'styleguide:applystyles']);
