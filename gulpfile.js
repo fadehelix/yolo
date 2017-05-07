@@ -35,6 +35,16 @@ gulp.task('sass', function() {
     .pipe(gulp.dest('./css'));
 });
 
+//Generate sprite from .png images
+gulp.task('sprite', function() {
+    var spriteData = gulp.src('images/sprites/*.png').pipe(spritesmith({
+      imgName: 'sprite.png',
+      imgPath: '../images/sprite.png',
+      cssName: 'sprite.scss'
+    }));
+    return spriteData.pipe(gulp.dest('images/'));
+});
+
 // Process JS files and return the stream.
 gulp.task('js', function() {
   return gulp.src('js/*js')
