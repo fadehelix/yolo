@@ -19,6 +19,7 @@ var shell = require('gulp-shell');
 var autoprefixer = require('gulp-autoprefixer');
 var concat = require('gulp-concat');
 var merge = require('merge-stream');
+var spritesmith = require('gulp.spritesmith');
 
 var autoprefixerOptions = {
   browsers: ['last 2 versions', '> 5%', 'Firefox ESR']
