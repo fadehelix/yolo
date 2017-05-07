@@ -1,10 +1,9 @@
 {
-  "name": "Yolo-theme",
+  "name": "Yolo-gulp",
   "author": "Fadehelix",
   "version": "1.0.0",
-  "description": "Drupal 8 Theme Boilerplate",
+  "description": "Gulp boilerplate",
   "devDependencies": {
-    "drupal-sass-breakpoints": "^1.0.1",
     "gulp": "^3.9.1",
     "gulp-autoprefixer": "^3.1.1",
     "gulp-concat": "^2.6.1",
