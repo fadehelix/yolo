@@ -1,9 +1,10 @@
 {
-  "name": "Yolo-gulp",
+  "name": "Yolo-theme",
   "author": "Fadehelix",
   "version": "1.0.0",
-  "description": "Gulp boilerplate",
+  "description": "Drupal 8 Theme Boilerplate",
   "devDependencies": {
+    "drupal-sass-breakpoints": "^1.0.1",
     "gulp": "^3.9.1",
     "gulp-autoprefixer": "^3.1.1",
     "gulp-concat": "^2.6.1",
@@ -11,6 +12,7 @@
     "gulp-sass": "^3.1.0",
     "gulp-shell": "0.5.2",
     "gulp-sourcemaps": "^1.5.2",
+    "gulp-svg-sprites": "^4.1.1",
     "gulp.spritesmith": "^6.4.0",
     "merge-stream": "^1.0.0",
     "node-bourbon": "^4.2.8",

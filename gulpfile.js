@@ -20,6 +20,7 @@ var autoprefixer = require('gulp-autoprefixer');
 var concat = require('gulp-concat');
 var merge = require('merge-stream');
 var spritesmith = require('gulp.spritesmith');
+var svgSprite = require("gulp-svg-sprites");
 
 var autoprefixerOptions = {
   browsers: ['last 2 versions', '> 5%', 'Firefox ESR']
@@ -36,7 +37,7 @@ gulp.task('sass', function() {
     .pipe(gulp.dest('./css'));
 });
 
-//Generate sprite from .png images
+//Generate .png sprite
 gulp.task('sprite', function() {
     var spriteData = gulp.src('images/sprites/*.png').pipe(spritesmith({
       imgName: 'sprite.png',
@@ -44,6 +45,22 @@ gulp.task('sprite', function() {
       cssName: 'sprite.scss'
     }));
     return spriteData.pipe(gulp.dest('images/'));
+});
+
+//Generate svg sprite
+gulp.task('sprite-svg', function () {
+  return gulp.src('images/sprites-svg/*.svg')
+    .pipe(svgSprite({
+      preview: false,
+      templates: {
+        scss: require("fs").readFileSync("./tmpl/sprite-svg.scss", "utf-8")
+      },
+      cssFile: "../scss/_sprite-svg.scss",
+      svg: {
+        sprite: "./sprite.svg"
+      }
+    }))
+    .pipe(gulp.dest("images"));
 });
 
 // Process JS files and return the stream.
