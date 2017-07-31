@@ -3,14 +3,12 @@
  * Gulp configuration.
  */
 
-var gulp = require("gulp");
-var sass = require("gulp-sass");
+var gulp = require("gulp"),
+    sass = require("gulp-sass");
 //Additional configuration and import node libraries
 var sassOptions = {
     errLogToConsole: true,
-    outputStyle: 'expanded',
-    includePaths: require('node-bourbon').includePaths,
-    includePaths: require('node-neat').includePaths
+    outputStyle: 'expanded'
 };
 // Show in browser inspector in which SCSS file and line rule is defined.
 var sourcemaps = require('gulp-sourcemaps');

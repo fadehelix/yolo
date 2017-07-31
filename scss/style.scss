@@ -1,7 +1,7 @@
 //Mixins
-@import "bourbon";
+@import "bourbon/bourbon";
 //Grid
-@import "neat";
+@import "neat/neat";
 
 $font-stack-system: 'Arial, sans-serif';
 
@@ -9,3 +9,7 @@ $font-stack-system: 'Arial, sans-serif';
 @import 'base/base';
 
 @import 'layout/layout';
+
+//REMOVE THIS IN REAL PROJECT
+//This file is only for ensure that every imports works properly
+@import './_test.scss';

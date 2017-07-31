@@ -1,15 +1,2 @@
-/*
-Main containers
 
-Styleguide 1
-*/
-.region-top {
-  @include outer-container;
-  border:1px dashed pink;
 
-}
-
-.page-container {
-  @include outer-container;
-  border:1px dashed blue;
-}
