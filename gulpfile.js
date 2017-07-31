@@ -4,11 +4,13 @@
  */
 
 var gulp = require("gulp"),
-    sass = require("gulp-sass");
+    sass = require("gulp-sass"),
+    normalize = require("node-normalize-scss");
 //Additional configuration and import node libraries
 var sassOptions = {
     errLogToConsole: true,
-    outputStyle: 'expanded'
+    outputStyle: 'expanded',
+    includePaths: [].concat(normalize)
 };
 // Show in browser inspector in which SCSS file and line rule is defined.
 var sourcemaps = require('gulp-sourcemaps');
