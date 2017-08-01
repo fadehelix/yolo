@@ -9,6 +9,12 @@ Gulp configuration boilerplate with most popular tasks. There are also some pred
 * Generate .png sprite and sass mixin from many .png files
 * Generate .svg sprite and sass mixin from many .svg files
 
-## Resources
-* SMACSS vs %placeholder and @extend: https://www.smashingmagazine.com/2015/05/extending-in-sass-without-mess/
+## How to use
+1. `npm install`
+2. `gulp`
+
+## How to generate sprites from images
+1. __PNG:__ `gulp sprite` - the command assumes that all your images are in _images/sprites/_ folder
+2. __SVG:__ `gulp sprite-svg` - all svg images have to be inside _images/sprites-svg/_ folder
+
  
