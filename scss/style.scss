@@ -8,5 +8,8 @@ $font-stack-system: 'Arial, sans-serif';
 //Bourbon Bitters
 @import 'base/base';
 
+//Normalize.css
+@import '../node_modules/normalize.css/normalize.css';
+
 @import 'layout/layout';
 @import 'component/button';
