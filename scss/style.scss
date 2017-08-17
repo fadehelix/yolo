@@ -1,15 +1,18 @@
 //Mixins
-@import "bourbon";
+@import "bourbon/bourbon";
 //Grid
-@import "neat";
+@import "neat/neat";
 
 $font-stack-system: 'Arial, sans-serif';
 
-//Bourbon Bitters
+//Base styles
 @import 'base/base';
 
 //Normalize.css
 @import '../node_modules/normalize.css/normalize.css';
 
 @import 'layout/layout';
-@import 'component/button';
+
+//REMOVE THIS IN REAL PROJECT
+//This file is only for ensure that every imports works properly
+@import './_test.scss';

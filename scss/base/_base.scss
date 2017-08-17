@@ -1,14 +1,36 @@
-// Bitters 1.4.0
-// http://bitters.bourbon.io
-// Copyright 2013-2015 thoughtbot, inc.
-// MIT License
+// Font Sizes
+$base-font-size: 1em;
 
-@import "variables";
+// Line height
+$base-line-height: 1.5;
+$heading-line-height: 1.2;
 
-@import "buttons";
-@import "forms";
-@import "layout";
+// Other Sizes
+$base-border-radius: 3px;
+$base-spacing: $base-line-height * 1em;
+$small-spacing: $base-spacing / 2;
+$base-z-index: 0;
+
+@import "colors";
+@import "breakpoints";
+@import "animations";
 @import "lists";
 @import "media";
-@import "tables";
 @import "typography";
+
+
+////Normalize
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+html,
+body {
+  height: 100%;
+}

@@ -3,7 +3,3 @@
 /maps/
 /styleguide
 
-#Drupal theme  files
-templates/
-*.info.yml
-*.libraries.yml

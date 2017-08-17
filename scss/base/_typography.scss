@@ -1,5 +1,9 @@
+// Typography
+$base-font-family: $font-stack-system;
+$heading-font-family: $base-font-family;
+
 body {
-  color: $base-font-color;
+  color: $dark-gray;
   font-family: $base-font-family;
   font-size: $base-font-size;
   line-height: $base-line-height;
@@ -22,19 +26,19 @@ p {
 }
 
 a {
-  color: $action-color;
+  color: $color-blue;
   text-decoration: none;
   transition: color $base-duration $base-timing;
 
   &:active,
   &:focus,
   &:hover {
-    color: shade($action-color, 25%);
+    color: shade($color-yellow, 25%);
   }
 }
 
 hr {
-  border-bottom: $base-border;
+  border-bottom: 1px solid $color-black;
   border-left: 0;
   border-right: 0;
   border-top: 0;
