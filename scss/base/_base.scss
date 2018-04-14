@@ -1,5 +1,10 @@
+
+//Font families
+$base-font-family: 'Arial, sans-serif';
+$heading-font-family: $base-font-family;
+
 // Font Sizes
-$base-font-size: 1em;
+$base-font-size: 16px;
 
 // Line height
 $base-line-height: 1.5;
@@ -14,9 +19,6 @@ $base-z-index: 0;
 @import "colors";
 @import "breakpoints";
 @import "animations";
-@import "lists";
-@import "media";
-@import "typography";
 
 
 ////Normalize
@@ -30,7 +32,46 @@ html {
   box-sizing: inherit;
 }
 
-html,
 body {
-  height: 100%;
+  color: $dark-gray;
+  font-family: $base-font-family;
+  font-size: $base-font-size;
+  height: 100vh;
+  line-height: $base-line-height;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $heading-font-family;
+  font-size: modular-scale(1);
+  line-height: $heading-line-height;
+  margin: 0 0 $small-spacing;
+}
+
+p {
+  margin: 0 0 $small-spacing;
+}
+
+a {
+  color: $color-blue;
+  text-decoration: none;
+  transition: color $base-duration $base-timing;
+  
+  &:active,
+  &:focus,
+  &:hover {
+    color: shade($color-yellow, 25%);
+  }
+}
+
+hr {
+  border-bottom: 1px solid $color-black;
+  border-left: 0;
+  border-right: 0;
+  border-top: 0;
+  margin: $base-spacing 0;
 }

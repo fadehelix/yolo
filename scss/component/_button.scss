@@ -1,11 +1,12 @@
-
-// Buttons
-//
-// Buttons can and should be clicked.
-//
-// markup: <button class="button {$modifiers}">TEST</button>
-//
-// :hover - Highlight the button when hovered.
-//
-// Styleguide 1.1.1
-
+.btn {
+  background: #fff;
+  border: 1px solid #000;
+  color: #000;
+  display: inline-block;
+  padding: 10px;
+  transition: background-color .5s ease-in-out;
+  
+  &:hover {
+    background: #aaa;
+  }
+}
