@@ -8,7 +8,7 @@ Gulp configuration boilerplate with most popular tasks. There are also some pred
 * Sass Sourcemaps
 * Generate .png sprite and sass mixin from many .png files
 * Generate .svg sprite and sass mixin from many .svg files
-* Optionaly setup [bourbon]() with [neat grid]()
+* Optionaly setup [Bourbon](https://www.bourbon.io/docs/latest/) with [Neat grid](https://neat.bourbon.io/docs/latest/)
 
 ## How to use
 1. `npm install`
