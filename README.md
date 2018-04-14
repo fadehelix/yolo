@@ -8,6 +8,7 @@ Gulp configuration boilerplate with most popular tasks. There are also some pred
 * Sass Sourcemaps
 * Generate .png sprite and sass mixin from many .png files
 * Generate .svg sprite and sass mixin from many .svg files
+* Optionaly setup [bourbon]() with [neat grid]()
 
 ## How to use
 1. `npm install`
@@ -17,4 +18,5 @@ Gulp configuration boilerplate with most popular tasks. There are also some pred
 1. __PNG:__ `gulp sprite` - the command assumes that all your images are in _images/sprites/_ folder
 2. __SVG:__ `gulp sprite-svg` - all svg images have to be inside _images/sprites-svg/_ folder
 
- 
+## How to use Bourbon and Neat
+`npm run setup:bourbon`
